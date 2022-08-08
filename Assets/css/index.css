@@ -5,3 +5,11 @@ body{
 #navbar{
     background-color: black;
 }
+
+#createAccont{
+    background-color: black;
+    color: #04D361;
+    border-color: #04D361;
+    border-radius: 10px;
+    border-style: solid;
+}
