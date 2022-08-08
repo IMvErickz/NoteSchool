@@ -28,6 +28,7 @@ body{
     color: white;
     font-size: 30px;
     margin-left: 300px;
+    text-align:center;
 }
 
 #campo{
@@ -42,7 +43,8 @@ body{
 
 #strong2{
     color: #04D361;
-    margin-left: 140px;
+    margin-left: 0px;
+    margin-right: 15px;
     font-size: 36px;
 }
 
