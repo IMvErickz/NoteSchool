@@ -39,3 +39,9 @@ body{
 #strong{
     color: #04D361;
 }
+
+#strong2{
+    color: #04D361;
+    margin-left: 100px;
+    font-size: 36px;
+}
