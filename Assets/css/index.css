@@ -17,3 +17,25 @@ body{
 #login{
     margin-top: 10px;
 }
+
+#paragrafo{
+    color: #04D361;
+    margin-left: 400px;
+    font-size: 48px;
+}
+
+#paragrafo2{
+    color: white;
+    font-size: 30px;
+    margin-left: 300px;
+}
+
+#campo{
+    border-right: 500px;
+    border-style: none;
+
+}
+
+#strong{
+    color: #04D361;
+}
