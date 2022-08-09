@@ -20,10 +20,18 @@ body{
 
 #tittle{
     color: #04D361;
-    margin-left: 480px;
     font-size: 48px;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+
+#herDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #coruja{
@@ -33,7 +41,7 @@ body{
 #paragrafo2{
     color: white;
     font-size: 30px;
-    margin-left: 300px;
+    width: 100%;
     text-align:center;
 }
 
