@@ -4,6 +4,7 @@ body {
 
 #tittle{
     color: #04D361;
+    
 }
 
 #navBar{
@@ -11,5 +12,5 @@ body {
     display: flex;
         justify-content: center;
         width: 100%;
-        
+
 }
