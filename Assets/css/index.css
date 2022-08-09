@@ -64,20 +64,12 @@ body{
 
 #links{
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
-#insIncon{
-    margin-left: 480px;
-}
-
-#gitIncon{
-    margin-left: 100px;
-}
-
-#twiIncon{
-    margin-left: 90px;
-}
-
-#emailIncon{
-    margin-left: 60px;
+.alinks{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 3rem;
 }
