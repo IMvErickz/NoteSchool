@@ -23,6 +23,7 @@ body{
     margin-left: 480px;
     font-size: 48px;
     display: flex;
+    justify-content: center;
 }
 
 #coruja{
