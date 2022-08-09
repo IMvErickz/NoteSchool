@@ -1,0 +1,14 @@
+    body {
+        background-color: #202024;
+    }
+
+    #navBar {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        background-color: black;
+    }
+
+    #tittle {
+        color: #04D361;
+    }
