@@ -20,10 +20,15 @@ body{
 
 #tittle{
     color: #04D361;
-    margin-left: 460px;
+    margin-left: 400px;
     font-size: 48px;
+    display: flex;
 }
 
+#coruja{
+    width: 60px;
+    height: 70px;
+}
 #paragrafo2{
     color: white;
     font-size: 30px;
