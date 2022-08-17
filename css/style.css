@@ -12,3 +12,22 @@
     #tittle {
         color: #04D361;
     }
+
+#field{
+    border-color: #04D361;
+    justify-content: center;
+    margin-top: 150px;
+    width: 700px;
+    border-radius: 15px;
+}
+
+#buttonEnviar{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+}
