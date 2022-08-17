@@ -25,6 +25,11 @@
     display: flex;
     justify-content: center;
     
+    
+}
+
+#button{
+    border-radius: 15px;
 }
 
 #principal{
