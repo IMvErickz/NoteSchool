@@ -16,7 +16,7 @@
 #field{
     border-color: #04D361;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 120px;
     width: 700px;
     border-radius: 15px;
 }
@@ -38,10 +38,6 @@
     justify-content: center;
 }
 
-#email{
-    color: white;
-}
-
-#password {
+input{
     color: white;
 }
