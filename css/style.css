@@ -41,3 +41,13 @@
 input{
     color: white;
 }
+
+#linkCad{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#aink{
+    color: #04D361;
+}
