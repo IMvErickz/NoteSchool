@@ -45,6 +45,14 @@ body{
     text-align:center;
 }
 
+#paragrafo22 {
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
 #campo{
     border-right: 500px;
     border-style: none;
@@ -74,6 +82,13 @@ body{
     justify-content: center;
 }
 
+#linkss {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
 .alinks{
     width: 5rem;
     height: 4rem;
@@ -83,6 +98,11 @@ body{
 .icon{
     width: 3.75rem;
     height: 3.75rem;
+}
+
+.icons {
+    width: 5.75rem;
+    height: 5.75rem;
 }
 
 #profile{
