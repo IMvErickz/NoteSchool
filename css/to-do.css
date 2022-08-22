@@ -46,11 +46,9 @@ input{
     font-size: 25px;
 }
 
-#inputTodo{
- color: white;
- 
-}
 
 #divTodo{
-    justify-content: center;
+    display: inline;
+    text-align: center;
+    width: 99%;
 }
