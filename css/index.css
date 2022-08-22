@@ -82,6 +82,11 @@ body{
     justify-content: center;
 }
 
+#linkIn{
+    text-decoration: underline;
+    color: #04D361;
+}
+
 #linkss {
     display: flex;
     width: 100%;
@@ -108,3 +113,17 @@ body{
 #profile{
     color: #04D361;
 }
+
+
+#inputName{
+    display: flex;
+    
+ }
+
+ #name{
+    color: white;
+ }
+
+ #button{
+    margin
+ }
