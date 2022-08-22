@@ -45,3 +45,12 @@ input{
     color: white;
     font-size: 25px;
 }
+
+#inputTodo{
+ color: white;
+ 
+}
+
+#divTodo{
+    justify-content: center;
+}
