@@ -1,0 +1,17 @@
+nav{
+    background-color: black;
+}
+
+body{
+    background-color: #202024;
+}
+
+#inconsNav{
+    width: 50px;
+    margin-top: 8px;
+}
+
+#prof {
+    color: #04D361;
+    font-size: 30px;
+}
