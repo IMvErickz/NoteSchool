@@ -125,5 +125,6 @@ body{
  }
 
  #button{
-    margin
+    background-color: #04D361;
+    border-radius: 15px;
  }
