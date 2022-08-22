@@ -55,6 +55,12 @@ body{
     color: #04D361;
 }
 
+#strongs {
+    color: #04D361;
+    display: flex;
+   text-align: center;
+}
+
 #strong2{
     color: #04D361;
     margin-left: 0px;
@@ -77,4 +83,8 @@ body{
 .icon{
     width: 3.75rem;
     height: 3.75rem;
+}
+
+#profile{
+    color: #04D361;
 }
