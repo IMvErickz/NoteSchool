@@ -10,6 +10,7 @@
     <title>Notes</title>
 </head>
 <body>
+<header>
     <nav>
         <div class="nav-wrapper">
             <a href="./inicio.html" class="brand-logo"><img src="./incons/Logo_Note-removebg-preview.png" alt="" width="190px"></a>
@@ -17,10 +18,29 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="./pomodoro.html"><img id="inconsNav" src="./incons/pomodoro.png" alt=""></a></li>
                 <li><a href="./To-do.html"><img id="inconsNav" src="./incons/to-do-list.png" alt=""></a></li>
+                <li><a id="buttonNew" class="waves-effect waves-light btn">Novo card</a></li>
                 <li><strong id="prof">Olá, <span id="spanName"></span></strong></li>
             </ul>
         </div>
     </nav>
+</header>
+
+<div>
+    <div class="row">
+        <div class="col s12 m3">
+            <div id="card" class="card grey darken-3">
+                <div class="card-content white-text">
+                    <span id="buttonCard" class="card-title">Erick</span>
+                    <p><span id="descrition">adasdasdadasd</span></p>
+                </div>
+                <div id="card" class="card-action">
+                    <a id="buttonCard" href="#">Abrir</a>
+                    <a id="buttonCard" href="#">Excluir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
