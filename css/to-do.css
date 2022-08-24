@@ -35,6 +35,11 @@ input{
     font-size: 48px;
 }
 
+#button{
+    background-color: #04D361 ;
+    border-radius: 15px;
+}
+
 #table{
     width: 100%;
     display: flex;
