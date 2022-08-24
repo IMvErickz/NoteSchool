@@ -4,5 +4,5 @@ let button = document.getElementById("button")
         swal("Sucesso", "Seu nome está salvo", "success")
             .then(() => {
             localStorage.setItem("Nome", name)
-        })
+            })
 })
