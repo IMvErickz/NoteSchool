@@ -27,4 +27,11 @@ function toList(idList) {
                 span.style.color = '#696969'
         })
     }
-    }
+}
+    
+$("#description").keypress(function(event) {
+            if (event.keyCode === 13) {
+                $("#button").click();
+                alert("lcik")
+            }
+        });
