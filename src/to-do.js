@@ -23,7 +23,8 @@ function toList(idList) {
         swal("Parabéns!", "Mais uma tarefa concluída", "success")
             .then(() => {
             let span = document.getElementById("span")
-            span.style.textDecoration = 'line-through'
+                span.style.textDecoration = 'line-through'
+                span.style.color = '#696969'
         })
     }
     }
