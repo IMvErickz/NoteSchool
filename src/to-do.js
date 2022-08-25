@@ -32,6 +32,5 @@ function toList(idList) {
 $("#description").keypress(function(event) {
             if (event.keyCode === 13) {
                 $("#button").click();
-                alert("lcik")
             }
         });
