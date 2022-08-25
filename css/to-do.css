@@ -55,10 +55,20 @@ input{
 #divTodo{
     display: inline;
     text-align: center;
-    width: 99%;
+    width: 50%;
+    
 }
 
 #spanName{
     color: #04D361;
         font-size: 30px;
+}
+
+fieldset{
+    width: 66%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
 }
