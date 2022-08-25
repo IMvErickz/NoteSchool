@@ -26,6 +26,10 @@ function toList(idList) {
                 span.style.textDecoration = 'line-through'
                 span.style.color = '#696969'
         })
+    } else {
+        let span = document.getElementById("span")
+        span.style.textDecoration = 'none'
+        span.style.color = 'white'
     }
 }
     
