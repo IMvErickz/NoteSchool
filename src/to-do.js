@@ -15,4 +15,15 @@ let button = document.getElementById('button')
         let recComent = localStorage.getItem("Check")
 
         span.innerHTML = recComent
-})
+    })
+
+function toList(idList) {
+    let list = document.getElementById(idList)
+    if (list.checked) {
+        swal("Parabéns!", "Mais uma tarefa concluída", "success")
+            .then(() => {
+            let span = document.getElementById("span")
+            span.style.textDecoration = 'line-through'
+        })
+    }
+    }
