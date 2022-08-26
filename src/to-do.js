@@ -15,6 +15,8 @@ let button = document.getElementById('button')
         let recComent = localStorage.getItem("Check")
 
         span.innerHTML = recComent
+
+        let coment2 = document.getElementById("description").value = ""
     })
 
 function toList(idList) {
@@ -32,9 +34,19 @@ function toList(idList) {
         span.style.color = 'white'
     }
 }
+
+document.addEventListener('keypress', function(e){
+  if(e.which == 13){
+    enviaForm()
+  }
+}, false)
+
+function enviaForm() {
+    let coment = document.getElementById("description").value
+localStorage.setItem("Check", coment)
+   let span = document.getElementById("span")
+ let recComent = localStorage.getItem("Check")
+    span.innerHTML = recComent
     
-$("#description").keypress(function(event) {
-            if (event.keyCode === 13) {
-                $("#button").click();
-            }
-        });
+    let coment2 = document.getElementById("description").value = ""
+}
