@@ -9,7 +9,10 @@ window.onload = function(){
 let button = document.getElementById('button')
     .addEventListener("click", () => {
         let coment = document.getElementById("description").value
-        localStorage.setItem("Check", coment)
+        let saveLocal = []
+        saveLocal.push(coment)
+        console.log(saveLocal)
+        localStorage.setItem("Check", saveLocal)
 
         let span = document.getElementById("span")
         let recComent = localStorage.getItem("Check")
