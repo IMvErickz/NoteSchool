@@ -14,12 +14,12 @@ let button = document.getElementById("button")
     text: "Confirmar",
   },
     }).then(() => {
-    swal({
-  text: 'Digite sue comentário',
+        swal("Escreva seu comentário:", {
   content: "input",
-  button: {
-    text: "Confirmar",
-  },
 })
+.then((value) => {
+  swal(`Você escreveu: ${value}`);
+});
+    })
 })
-})
+
