@@ -17,8 +17,8 @@ body{
     font-size: 30px;
 }
 
-#buttonCard{
-    color: #04D361;
+.buttonCard{
+    color: #04D361 !important;
 }
 
 .card-action{
