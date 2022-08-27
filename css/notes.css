@@ -40,6 +40,7 @@ body{
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    background-color: #424242;
 }
 
 #butModal{
@@ -55,4 +56,8 @@ body{
 #butModalcl{
     display: flex;
     justify-content: center;
+}
+
+input{
+    color: white;
 }
