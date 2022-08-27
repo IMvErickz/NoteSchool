@@ -34,3 +34,25 @@ body{
     background-color: #04D361;
     border-radius: 15px;
 }
+
+.modal{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#butModal{
+    
+    background-color: #04D361;
+        border-radius: 15px;
+}
+
+.content{
+    border-radius: 15px;
+}
+
+#butModalcl{
+    display: flex;
+    justify-content: center;
+}

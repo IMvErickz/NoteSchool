@@ -6,20 +6,26 @@ window.onload = function(){
 }
 
 let button = document.getElementById("button")
-    .addEventListener("click", () => {
-    swal({
-  text: 'Digite o título da sua nota',
-  content: "input",
-  button: {
-    text: "Confirmar",
-  },
-    }).then(() => {
-        swal("Escreva seu comentário:", {
-  content: "input",
-})
-.then((value) => {
-  swal(`Você escreveu: ${value}`);
-});
-    })
+  .addEventListener("click", () => {
+  const switchModal = () => {
+const modal = document.querySelector('.modal')
+const actualStyle = modal.style.display
+if(actualStyle == 'block'){
+  modal.style.display = 'none'
+}else{
+  modal.style.display = 'block'
+
+}
+}
+
+const btn = document.querySelector('.buttonCard')
+.addEventListener("click", switchModal)
+
+window.onclick = function(event){
+  const modal = document.querySelector('.modal')
+  if(event.target == modal){
+    switchModal()
+  }
+}
 })
 
