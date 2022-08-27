@@ -27,5 +27,24 @@ window.onclick = function(event){
     switchModal()
   }
 }
-})
+  })
+
+let saved = document.getElementById("butModal")
+  .addEventListener("click", () => {
+    let note = {
+      Titulo:  document.getElementById("tittle").value,
+      Comentario:  document.getElementById("coment").value
+    }
+
+    localStorage.setItem("save", JSON.stringify(note))
+
+    let tittle = document.getElementById("buttonCard")
+    let coment = document.getElementById("descrition")
+    let recSave = JSON.parse(localStorage.getItem("save"))
+    
+    tittle.innerHTML = recSave.Titulo
+    coment.innerHTML = recSave.Comentario
+
+document.getElementByClassName
+  })
 
