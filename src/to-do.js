@@ -35,6 +35,7 @@ function toList(idList) {
         let span = document.getElementById("span")
         span.style.textDecoration = 'none'
         span.style.color = 'white'
+        let remove = localStorage.removeItem("Check")
     }
 }
 
