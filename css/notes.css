@@ -81,3 +81,8 @@ width: 210px;
     border-radius: 15px;
 }
 
+#exclude{
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
