@@ -4,7 +4,7 @@ nav{
 }
 
 body{
-    background-color: #202024;
+    background-color: #202024 !important;
 }
 
 #inconsNav{
@@ -24,10 +24,13 @@ body{
 .card-action{
     display: flex;
     justify-content: center;
+    
+    
 }
 
 #card{
     border-radius: 15px;
+    width: 220px;
 }
 
 #buttonNew{
@@ -59,9 +62,22 @@ body{
 }
 
 input{
-    color: white;
+    color: black !important;
 }
 
 #buttonCard{
     color: #04D361;
 }
+
+#button{
+    color: #04D361 !important;
+    border-style: none;
+    background-color: none;
+    background-color: #424242;
+}
+
+#withButton{
+width: 210px;
+    border-radius: 15px;
+}
+

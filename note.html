@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./graduation-cap 1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./css/notes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Notes</title>
 </head>
 <body>
@@ -33,8 +35,11 @@
                     <span name="tittleNote" id="buttonCard" class="card-title"></span>
                     <p><span id="descrition"></span></p>
                 </div>
-                <div id="card" class="card-action">
-                    <a class="buttonCard" id="button" href="#">Abrir</a>
+                <div id="withButton" class="card-action">
+                    
+                    <button id="button" type="button" class="buttonCard" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Abrir
+                    </button>
                     <a class="buttonCard" id="exclude" href="#">Excluir</a>
                 </div>
             </div>
@@ -42,23 +47,41 @@
     </div>
 </div>
 
-<!--Modal das notas-->
-<div class="modal">
-    <div class="content">
-        <label for="name">Título da nota</label>
-        <input id="tittle" type="text">
+<!-- Button trigger modal -->
 
-        <label for="name">Comentário da nota</label>
-        <input id="coment" type="text"> <br> <br>
 
-    </div> 
-    <div id="butModalcl">
-        <a id="butModal" class="waves-effect waves-light btn">Confirmar</a>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Escreva sua nota</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="name">Título da nota</label>
+                <input id="tittle" type="text">
+
+                <label for="name">Comentário da nota</label>
+                <input id="coment" type="text"> <br> <br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button id="button" type="button" class="btn btn-primary">Confirmar</button>
+            </div>
+        </div>
     </div>
 </div>
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./src/note.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
 </html>
