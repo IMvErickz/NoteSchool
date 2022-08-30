@@ -62,7 +62,7 @@ body{
 }
 
 input{
-    color: black !important;
+    color: white !important;
 }
 
 #buttonCard{
@@ -86,3 +86,14 @@ width: 210px;
     text-transform: lowercase;
 }
 
+.modal-content{
+    background-color: #424242 !important;
+}
+
+.modal-title{
+    color: #04D361 !important;
+}
+
+.modal-footer{
+    background-color: #424242 !important;
+}
