@@ -98,3 +98,9 @@ width: 215px;
 .modal-footer{
     background-color: #424242 !important;
 }
+
+#staticBackdrop{
+    width: 100% !important;
+    height: 500px;
+    margin-top: 80px;
+}
