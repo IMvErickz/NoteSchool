@@ -2,7 +2,9 @@ window.onload = function(){
     let localName = document.getElementById("spanName")
     let recName = localStorage.getItem("Nome")
 
-    localName.innerHTML = recName
+  localName.innerHTML = recName
+  
+  getLocal()
 }
 
 let button = document.getElementById("button")
@@ -28,3 +30,12 @@ let excluid = document.getElementById("exclude")
     
     
   })
+
+function getLocal() {
+  const recTittle = document.getElementById("buttonCard")
+  const recDesc = document.getElementById("descrition")
+  let recLocal = JSON.parse(localStorage.getItem("save"))
+
+  recTittle.innerHTML = recLocal.Titulo
+  recDesc.innerHTML = recLocal.Comentario
+  }
