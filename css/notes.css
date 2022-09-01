@@ -104,3 +104,10 @@ width: 215px;
     height: 430px;
     margin-top: 80px;
 }
+
+#buttonn {
+    color: #04D361 !important;
+    border-style: none;
+    background-color: none;
+    background-color: #424242;
+}
