@@ -3,6 +3,7 @@ window.onload = function(){
     let recName = localStorage.getItem("Nome")
 
     localName.innerHTML = recName
+    recLocal()
 }
 
 
@@ -30,6 +31,7 @@ function toList(idList) {
             let span = document.getElementById("span")
                 span.style.textDecoration = 'line-through'
                 span.style.color = '#696969'
+                window.location.reload = localStorage.removeItem("Check")
         })
     } else {
         let span = document.getElementById("span")
@@ -53,4 +55,11 @@ localStorage.setItem("Check", coment)
     span.innerHTML = recComent
     
     let coment2 = document.getElementById("description").value = ""
+}
+
+function recLocal() {
+    let spanRec = document.getElementById("span")
+    let recSaved = localStorage.getItem("Check")
+
+    spanRec.innerHTML = recSaved
 }
