@@ -27,6 +27,7 @@ let excluid = document.getElementById("exclude")
     let excluTittle = document.getElementById("buttonCard").style.display = "none"
     let excluComent = document.getElementById("descrition").style.display = "none"
     let remove = localStorage.removeItem("save")
+    location.reload()
     
     
   })
