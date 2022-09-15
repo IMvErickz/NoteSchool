@@ -40,3 +40,12 @@ function getLocal() {
   recTittle.innerHTML = recLocal.Titulo
   recDesc.innerHTML = recLocal.Comentario
   }
+
+ // $("#button").on("click", function(){
+   // $("#staticBackdrop").modal('hide');
+  //});
+
+const closeModal = document.getElementById("button")
+  .addEventListener("click", () => {
+  document.getElementById("staticBackdrop").modal('hide')
+})
