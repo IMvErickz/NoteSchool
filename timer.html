@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./graduation-cap 1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./css/pomo.css">
+    <link rel="stylesheet" href="./css/timer.css">
 
     <title>Timer</title>
 </head>
@@ -23,6 +23,27 @@
             </div>
         </nav>
     </header>
+    <div>
+        <fieldset>
+            <div>
+                <h1>Dê seu tempo!</h1>
+                
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="timeValue" type="number" class="validate">
+                                <label for="first_name">Faça seu timer</label>
+                                <a class="waves-effect waves-light btn">Confirmar</a>
+                            </div>
+            </div>
+
+            <div>
+                <span id="setTimer"></span> <br> <br> 
+                <a class="waves-effect waves-light btn">Parar</a>
+            </div>
+        </fieldset>
+    </div>
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="./src/timer.js"></script>
