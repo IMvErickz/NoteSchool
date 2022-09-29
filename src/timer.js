@@ -22,4 +22,15 @@ const button = document.getElementById("start")
             
             
         }
+
+const stop = document.getElementById("stopButton")
+    .addEventListener("click", () => {
+        swal("Você encerrou o timer!", "Volte quando quiser", "info")
+            .then(() => {
+            localTimer.innerHTML = input
+            clearTimeout(time)
+        })
+        
+        
 })
+    })
