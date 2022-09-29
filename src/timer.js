@@ -28,7 +28,7 @@ const stop = document.getElementById("stopButton")
         swal("Você encerrou o timer!", "Volte quando quiser", "info")
             .then(() => {
             localTimer.innerHTML = input
-            clearTimeout(time)
+                clearTimeout(time);
         })
         
         
