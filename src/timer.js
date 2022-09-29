@@ -4,3 +4,22 @@ window.onload = function(){
 
     localName.innerHTML = recName
 }
+    
+const button = document.getElementById("start")
+    .addEventListener("click", () => {
+    let localTimer = document.getElementById("setTimer")
+        let input = document.getElementById("timeValue").value 
+        
+        const time = setTimeout(timer, input * 1000)
+
+        function timer() {
+
+            for (let i = 0; i < input; i++){
+                localTimer.innerHTML = input-input
+                swal("Timer finalizado!", "Parabéns!", "success");
+            }
+            
+            
+            
+        }
+})
