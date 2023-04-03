@@ -24,8 +24,6 @@ export function ModalDialog() {
                 description
             })
 
-            location.reload()
-
             navigation('/Note')
         } catch (erro) {
             console.error(erro)

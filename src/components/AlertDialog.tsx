@@ -21,9 +21,9 @@ export function AlertModal(props: AlertProps) {
 
   async function del() {
     try {
-      await api.delete(`/deleteNote/${noteToken}`)
+      api.delete(`/deleteNote/${noteToken}`)
       console.log('Deletado')
-      location.reload()
+      
     } catch (error) {
       console.error(error)
       throw error

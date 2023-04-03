@@ -5,7 +5,7 @@ import { NavBar } from "../components/NavBar";
 import { useQuery } from "react-query";
 import { Checkbox } from "../components/Checkbox";
 import { LockLaminated } from "phosphor-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { List } from "../assets/List";
 import {Vite} from '../../public/vite'
 
@@ -15,6 +15,8 @@ interface TaskProps{
 }
 
 export function Task() {
+
+    const navigation = useNavigate()
 
     const [title, setTitle] = useState('')
     const [del, setIdDel] = useState('')
@@ -37,9 +39,8 @@ export function Task() {
 
     async function Delete() {
         try {
-            await api.delete(`/deleteTask/${del}`)
+            api.delete(`/deleteTask/${del}`)
             localStorage.removeItem('index')
-            location.reload()
         } catch (error) {
             console.log(error)
             throw error 
@@ -53,7 +54,7 @@ export function Task() {
             await api.post(`/task/${token}`, {
                 Title: title
             })
-            location.reload()
+            navigation('/Task')
         } catch (error) {
             console.error(error)
             throw error
