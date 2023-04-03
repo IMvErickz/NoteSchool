@@ -26,7 +26,7 @@ export function Note() {
         <div className="w-screen h-screen flex flex-col items-center jusitify-center bg-background">
             <nav>
                 <NavBar
-                    element={<Link to='/Task'><img src="../../public/to-do-list.png" className="w-20" alt="" /></Link>}
+                    element={<Link to='/Task'><h1 className="text-bgButton font-semibold text-xl">Task</h1></Link>}
                 />
             </nav>
 

@@ -64,7 +64,7 @@ export function Task() {
         <div className="w-screen h-screen flex flex-col items-center justify-center bg-background">
             <nav>
                 <NavBar
-                element={<Link to='/Note'><img src="../../public/copy-writing.png" className="w-20" alt="" /></Link>}
+                element={<Link to='/Note'><h1 className="text-bgButton font-semibold text-xl">Note</h1></Link>}
                 />
             </nav>
             <div className="w-full h-full flex flex-col items-center justify-center gap-y-12">
