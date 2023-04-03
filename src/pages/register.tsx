@@ -39,8 +39,7 @@ export function Register() {
             <form onSubmit={registerUser} className="w-full flex flex-col items-center justify-center gap-y-8">
                 <Input required placeholder="Nome" onChange={e => getName(e.target.value)}/>
                 <Input required type="email" placeholder="email" onChange={e => getEmail(e.target.value)}/>
-                <Input required type='password' placeholder="Senha" onChange={e => getPassword(e.target.value)} />
-                
+                <Input required type='password' placeholder="Senha" onChange={e => getPassword(e.target.value)} /> 
                 <button type="submit" className="bg-bgButton text-white font-bold py-2 px-12 rounded-lg hover:bg-green-300 hover:text-black">Cadastrar</button>
             </form>
             
