@@ -27,7 +27,7 @@ export function Login() {
 
 
         try {
-            await api.get(`/user/${email}`)
+            api.get(`/user/${email}`)
             .then(function (response) {
             getInfo(response.data.user)
             })
