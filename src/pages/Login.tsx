@@ -65,7 +65,7 @@ export function Login() {
                         type='password'
                 />
         
-                    <button type="submit" className="bg-bgButton text-white font-bold py-2 px-12 rounded-lg hover:bg-green-300 hover:text-black">Entrar</button>
+                    <button onFocus={login} type="submit" className="bg-bgButton text-white font-bold py-2 px-12 rounded-lg hover:bg-green-300 hover:text-black">Entrar</button>
                     <Link to={'/Register'}><span className="text-bgButton">Não tem conta? Cadastre-se aqui</span></Link>
                 
                </form>
