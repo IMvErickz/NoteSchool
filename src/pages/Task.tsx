@@ -2,10 +2,8 @@ import { useEffect, useState, FormEvent } from "react";
 import { api } from "../../lib/axios";
 import { Input } from "../components/Input";
 import { NavBar } from "../components/NavBar";
-import { useQuery } from "react-query";
 import { Checkbox } from "../components/Checkbox";
-import { LockLaminated } from "phosphor-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { List } from "../assets/List";
 import {Vite} from '../../public/vite'
 
@@ -16,17 +14,15 @@ interface TaskProps{
 
 export function Task() {
 
-    const navigation = useNavigate()
-
     const [title, setTitle] = useState('')
     const [del, setIdDel] = useState('')
+    const [task, getTask] = useState<TaskProps[]>([])
 
     const token = localStorage.getItem('userToken')
 
-    const {data} = useQuery<TaskProps[]>('Taks', async () => {
-        const response = await api.get(`/userTasks/${token}`)
-
-        return response.data.tasks
+    api.get(`/userTasks/${token}`)
+        .then(function (response) {
+        getTask(response.data.tasks)
     })
     
     useEffect(() => {
@@ -54,7 +50,6 @@ export function Task() {
             await api.post(`/task/${token}`, {
                 Title: title
             })
-            navigation('/Task')
         } catch (error) {
             console.error(error)
             throw error
@@ -84,7 +79,7 @@ export function Task() {
                     </form>
                 </div>
                 <div className="w-full flex flex-col items-center justify-center">
-                    {data?.map(e => {
+                    {task.map(e => {
                         return (
                             <div className="w-full flex flex-row items-start justify-start gap-x-4">
                                 <div className="w-full flex flex-col place-items-end justify-center">

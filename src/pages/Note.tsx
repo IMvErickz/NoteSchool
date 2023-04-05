@@ -3,7 +3,7 @@ import { api } from "../../lib/axios";
 import { AlertModal } from "../components/AlertDialog";
 import { ModalDialog } from "../components/Dialog";
 import { NavBar } from "../components/NavBar";
-import { useQuery } from 'react-query'
+import { useState } from "react";
 
 interface DataProps{
     id: string
@@ -12,14 +12,12 @@ interface DataProps{
 }
 
 export function Note() {
-
+    const [note, getNote] = useState<DataProps[]>([])
     const token = localStorage.getItem('userToken')
 
-
-    const { data } = useQuery<DataProps[]>('Notes', async () => {
-        const response = await api.get(`/userNotes/${token}`)
-
-        return response.data.notes
+    api.get(`/userNotes/${token}`)
+        .then(function (response) {
+        getNote(response.data.notes)
     })
 
     return (
@@ -36,7 +34,7 @@ export function Note() {
             </div>
 
             <div className="w-full h-full items-center justify-center grid sm:grid-rows-1 md:grid-rows-2 grid-rows-4 grid-flow-col gap-4">
-                {data?.map(e => {
+                {note.map(e => {
                     return (
                         <AlertModal
                             Title={e.Title}
