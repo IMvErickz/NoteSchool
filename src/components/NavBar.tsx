@@ -28,9 +28,9 @@ export function NavBar(props: NavProps) {
             </div>
             <div className="flex flex-row items-end justify-end">
                 {userName ?
-                    <div className=" w-full flex flex-row gap-x-8">
+                    <div className=" w-full h-full flex flex-row items-center justify-center gap-x-8">
                         <span className="text-bgButton text-2xl font-bold">Olá {userName}</span>
-                        <button onClick={logout} className="bg-bgButton p-2 rounded text-white">sair</button>
+                        <button onClick={logout} className="bg-bgButton rounded py-2 px-8 hover:bg-green-400 hover:text-black text-white">sair</button>
                     </div>
                     :  <Link to='/Login'>
                     <button className="bg-bgButton text-white font-bold py-2 px-8 rounded-lg hover:bg-green-300 hover:text-black">Entrar</button>
