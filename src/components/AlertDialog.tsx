@@ -33,7 +33,7 @@ export function AlertModal(props: AlertProps) {
     return (
       <AlertDialog.Root>
       <AlertDialog.Trigger asChild>
-          <div className='w-64 h-36 bg-zinc-700 flex flex-col items-center justify-center rounded-lg gap-y-8'>
+          <div className='w-max h-36 bg-zinc-700 flex flex-col items-center justify-center p-4 rounded-lg gap-y-8'>
             <h1 className='text-bgButton text-4xl'>{props.Title}</h1>
             <span hidden>{props.id}</span>
             <button onClick={saveTask} className='bg-zinc-600 rounded-lg py-2 px-4 text-bgButton'>Abrir</button>
