@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { api } from "../../lib/axios";
 import { AlertModal } from "../components/AlertDialog";
 import { ModalDialog } from "../components/Dialog";
@@ -15,16 +15,17 @@ export function Note() {
     const [note, getNote] = useState<DataProps[]>([])
     const token = localStorage.getItem('userToken')
 
+    const { id } = useParams()
+
     const memory = useMemo(() => {
         setInterval(() => {
-            api.get(`/userNotes/${token}`)
+            api.get(`/userNotes/${id}`)
                 .then(function (response) {
                     getNote(response.data.notes)
                 })
         }, 2000)
 
     }, [])
-
 
 
     return (
