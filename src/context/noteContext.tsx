@@ -1,6 +1,6 @@
 import { Dispatch, ReactNode, createContext, useState } from 'react'
 import { api } from '../../lib/axios'
-import { AxiosResponse } from 'axios'
+import { v4 } from 'uuid'
 
 export interface DataProps {
     id?: string
@@ -40,21 +40,19 @@ export function NoteProvider({ children }: ProviderProps) {
     }
 
     async function handleCreateNote(id: string) {
+        let noteID = v4()
 
-        let note: any
+        setData([...data, {
+            Title: 'Titulo da nota',
+            description: 'Descrição da nota',
+            id: noteID
+        }])
 
         await api.post(`/note/${id}`, {
             Title: 'Titulo da nota',
             description: 'Descrição da nota',
-        }).then((response) => {
-            note = response.data.note
+            idNote: noteID
         })
-
-        setData([...data, {
-            Title: note.Title,
-            description: note.description,
-            id: note.id
-        }])
 
     }
 
