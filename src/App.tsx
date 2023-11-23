@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Login' element={<Login />} />
-          <Route path='/Note/:id' element={<Note />} />
+          <Route path='/note/:id' element={<Note />} />
           <Route path='/Register' element={<Register />} />
         </Routes>
       </QueryClientProvider>
